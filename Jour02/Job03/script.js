@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     function addone(){
-        let compteur = document.querySelector("#compteur").innerHTML;
-        compteur++;
-        document.getElementById("compteur").innerHTML = compteur;
+        let para = document.querySelector("#compteur").innerHTML;
+        para++;
+        document.getElementById("compteur").innerHTML = para;
 
     }
 
