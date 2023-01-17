@@ -1,21 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    
     function showhide(){
         
-
-        if(button.style.display == "none"){
-            const body = document.querySelector("#body");
-            const article = document.createElement("article");
-            article.textContent = "L'important n'est pas la chute, mais l'atterrissage.";
-        
-            let body1 = body.appendChild(article);
-            body1.style.display = "";
-            
+        let vrai = document.querySelector("article");
+        if(!vrai){
+            let grosbody = document.querySelector("#body");
+            let tortue = document.createElement("article");
+            tortue.textContent = "L'important n'est pas la chute, mais l'atterrissage.";
+            body.appendChild(tortue);
         }
-        else if (button.style.display == ""){
-            body1.style.Display = "none";
+        else{
+            vrai.remove();
         }
-        
 
     }
     
