@@ -1,0 +1,51 @@
+@media screen and (min-width: 1600px){
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section {
+        background-color: #88c1d0;
+        margin: 3%;
+        padding: 6%;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px){
+    div{
+        display : flex;
+        flex-wrap: wrap;
+    }
+
+    div > section {
+        flex: 25%;
+    }
+
+    .section {
+        background-color: #88c1d0;
+        margin: 3%;
+        padding: 6%;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section {
+        background-color: #88c1d0;
+        margin: 3%;
+        padding: 6%;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
